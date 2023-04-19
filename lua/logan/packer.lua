@@ -27,12 +27,6 @@ return require('packer').startup(function(use)
     requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   }
 
-
-
-  -- use {
-  --     'vijaymarupudi/nvim-fzf'
-  -- }
-
   use { 'ibhagwan/fzf-lua',
     -- optional for icon support
     requires = { 'nvim-tree/nvim-web-devicons' }
