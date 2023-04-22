@@ -11,6 +11,7 @@ vim.opt.smartindent = true
 vim.opt.wrap = false
 
 vim.opt.swapfile = false
+
 vim.backup = false
 
 vim.opt.incsearch = true
@@ -23,3 +24,5 @@ vim.opt.signcolumn = "yes"
 vim.g.mapleader = " "
 
 vim.opt.modifiable = true 
+
+
