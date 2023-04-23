@@ -21,17 +21,24 @@ return require('packer').startup(function(use)
       requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- Old fuzzy finder
+  -- use { 'ibhagwan/fzf-lua',
+  --   -- optional for icon support
+  --   requires = { 'nvim-tree/nvim-web-devicons' }
+  -- }
+
+  -- Folder fuzzy finder
   use {
     "nvim-telescope/telescope-file-browser.nvim",
 
     requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   }
 
-  use { 'ibhagwan/fzf-lua',
-    -- optional for icon support
-    requires = { 'nvim-tree/nvim-web-devicons' }
-  }
 
+  use {
+      "nvim-tree/nvim-tree.lua",
+      requires = { "nvim-tree/nvim-web-devicons" }
+  }
   -- Toggle Comments
   use "terrortylor/nvim-comment"
 
